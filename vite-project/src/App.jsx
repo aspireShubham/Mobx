@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Count } from './components/Count'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { UserDetailsComponent } from './Components/UserDetailsComponent'
+
 
 
 function App() {
@@ -18,8 +21,10 @@ function App() {
           count is {count}
 
         </button>
-             <Count/>
-
+             {/* <Count/> */}
+             <UserDetailsComponent/>
+  
+          <p>Shubham Deshmukh</p>
       </div>
      
     </>

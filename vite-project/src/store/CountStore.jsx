@@ -1,6 +1,5 @@
 
 import {action, computed, makeObservable, observable } from 'mobx'
-import RootStore from './RootStore';
 
 export class CountStore  {
 
@@ -10,7 +9,7 @@ export class CountStore  {
     constructor (rootStore) {
 
         makeObservable (this,{
-            count : observable,
+          count : observable,
           increment : action,
           decrement: action,
           getCountValue : computed

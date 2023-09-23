@@ -1,13 +1,15 @@
 
 
 import { CountStore } from "./CountStore";
+import UserDetailsStore from './UserDetailsStore'
 
- class RootStore {
+export class RootStore {
     countStore;
+    userDetailsStore;
 
     constructor () {
         this.countStore = new CountStore(this)
+        this.userDetailsStore = new UserDetailsStore(this)
     }
 }
 
-export default RootStore
